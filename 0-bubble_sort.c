@@ -7,11 +7,11 @@
  * @size: size of array
  * Return: prints ordered array
 */
-void bubble_sort(int *array, size_t size) {
+void bubble_sort(int *array, size_t size)
+{
+	int i, tmp = 0, maxpos = 0, posswap = 1;
 
-    int i, tmp = 0, maxpos = 0, posswap = 1;
-
-    maxpos = size - 1;
+	maxpos = size - 1;
 	if (array == NULL || size < 2)
 		return;
 
